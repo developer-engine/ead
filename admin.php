@@ -2,6 +2,7 @@
 <?php 
     include("protected.php");
     proteger();
+    anti_adm();
 ?>
 
 <!DOCTYPE html>
@@ -18,66 +19,45 @@
     </head>
 
     <body>
-
         <?php include("header.php"); ?>
-
         <div class="content-wrapper">
             <div class="title-content">
                 <div class="img-content">
-                    <img src="assets/img/materias.png" />
+                    <img src="assets/img/admin.png" />
                 </div>
-                <h3 class="colorWhite"> MATÉRIAS</h3>
+                <h3 class="colorWhite"> ADMINISTRADOR</h3>
             </div>
 
             <div class="content">
 
+                <a href="turmas.php" class="link-item">
+                    <div class="materia">
+                        <div class="icon-materia fisica"><img src="assets/img/materias.png" class="icon-fisica"></div>
+                        <span class="name-materia">GERENCIAR TURMAS</span>
+                    </div>
+                </a>
+
+
                 <a href="#materia" class="link-item">
                     <div class="materia">
                         <div class="icon-materia fisica"><img src="assets/img/materias.png" class="icon-fisica"></div>
-                        <span class="name-materia">Física</span>
+                        <span class="name-materia">GERENCIAR PROFESSORES</span>
                     </div>
                 </a>
 
-                <a href="#materia" class="link-item">
-                    <div class="materia">
-                        <div class="icon-materia matematica"><img src="assets/img/materias.png" class="icon-matematica"></div>
-                        <span class="name-materia">Matemática</span>
-                    </div>
-                </a>
 
                 <a href="#materia" class="link-item">
                     <div class="materia">
-                        <div class="icon-materia matematica"><img src="assets/img/materias.png" class="icon-matematica"></div>
-                        <span class="name-materia">Matemática</span>
-                    </div>
-                </a>
-
-                <a href="#materia" class="link-item">
-                    <div class="materia">
-                        <div class="icon-materia matematica"><img src="assets/img/materias.png" class="icon-matematica"></div>
-                        <span class="name-materia">Matemática</span>
-                    </div>
-                </a>
-
-                <a href="#materia" class="link-item">
-                    <div class="materia">
-                        <div class="icon-materia matematica"><img src="assets/img/materias.png" class="icon-matematica"></div>
-                        <span class="name-materia">Matemática</span>
-                    </div>
-                </a>
-                
-                <a href="#materia" class="link-item">
-                    <div class="materia">
-                        <div class="icon-materia matematica"><img src="assets/img/materias.png" class="icon-matematica"></div>
-                        <span class="name-materia">Matemática</span>
+                        <div class="icon-materia fisica"><img src="assets/img/materias.png" class="icon-fisica"></div>
+                        <span class="name-materia">GERENCIAR MATÉRIAS</span>
                     </div>
                 </a>
                 <a href="#materia" class="link-item">
                     <div class="materia">
-                        <div class="icon-materia matematica"><img src="assets/img/materias.png" class="icon-matematica"></div>
-                        <span class="name-materia">Matemática</span>
+                        <div class="icon-materia fisica"><img src="assets/img/definicao.png" class="icon-fisica"></div>
+                        <span class="name-materia">DEFINIÇÃO</span>
                     </div>
-                </a>
+                </a>                                                
 
             </div>
 

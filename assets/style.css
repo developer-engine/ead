@@ -17,8 +17,101 @@ html, body{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
+/*CORES
+  
+  #colorWhite{color: #fff;}
+
+
+
+*/
+
+
 .colorWhite{
   color: #fff;
+}
+
+.bg-verde{
+  background: #f40 !important;
+}
+
+
+.linha{
+  position: absolute;
+  background: rgba(255, 230, 66, 0.5);
+  width: 100%;
+  padding: .5em;
+  color: #45433b;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+#modal-logout{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .1);
+  z-index: 2000;
+  top: -100%;
+  overflow: auto;
+  transition: .5s;
+}
+
+.dialog-logout{
+  background: #fff;
+  width: 20em;
+  height: 9em;
+  text-align: center;
+  user-select: none;
+  border-radius: .4em;
+}
+
+
+.dialog-logout .header-logout{
+  font-size: 20px;
+  padding: .1em;
+  text-align: left;
+}
+
+
+.dialog-logout .content{
+  text-align: center;
+  padding: 1em;
+}
+
+
+.dialog-logout .buttons{
+  margin: 1em;
+
+
+}
+
+.dialog-logout .buttons .button{
+  width: 20px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding: .5em;
+}
+
+.dialog-logout .confirm{
+  background: #00a822;
+}
+
+.dialog-logout .negar{
+  background: #f40;
+}
+
+
+.btn-logout{
+  float: right;
+  cursor: pointer;
 }
 
 #content-side{
@@ -60,7 +153,6 @@ html, body{
   height: 100%;
   margin-right: 2em;
   color: #fff;
-  cursor: pointer;
 }
 
 .header .header-left .foto-perfil{
@@ -70,8 +162,8 @@ html, body{
   right: 0;
   border: 2px solid transparent;
   margin: 1em;
-  background-color: rgba(233, 233, 233, 0.5);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .header .header-left:hover > .foto-perfil{
@@ -83,6 +175,7 @@ html, body{
 .header .header-left .dados-perfil{
   text-transform: uppercase;
 }
+
 
 #close{
   position: absolute;
@@ -104,7 +197,7 @@ html, body{
 #close img{
   width: 20px;
 }
-
+/*background: #35672f;*/
 #content-side .left-side{
   position: fixed;
   width: 16em;
@@ -122,13 +215,17 @@ html, body{
   overflow-y: hidden;
 }
 
+
 .left-side .navegacao:hover{
   overflow-y: auto;
 }
 
+/*::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}*/
 .left-side .navegacao::-webkit-scrollbar {
-  width: 3px;
-  background: #35672f;
+    width: 3px;
+    background: #35672f;
 }
 
 .left-side .navegacao::-webkit-scrollbar-thumb {
@@ -137,6 +234,10 @@ html, body{
   margin-left: 50px;
   height: 100px;
 }
+
+/*::-webkit-scrollbar-thumb {
+   background: #dad7d7;
+}*/
 
 .left-side form.buscar{
   margin-top: 4em;
@@ -187,7 +288,6 @@ html, body{
   justify-content: center;
 
 }
-
 .left-side .menu li{
   width: 100%;
   margin: 0em auto;
@@ -204,7 +304,11 @@ html, body{
   color: #fff;
   border-left: 3px solid transparent;
   align-items: center;
+
+
 }
+
+
 
 .menu li.text-subtitle{
   color: #fff;
@@ -212,6 +316,7 @@ html, body{
   font-size: 90%;
   padding: 15px 2.5em;
 }
+
 
 .left-side .menu li a:hover{
   border-left-color: #ff8518;
@@ -225,6 +330,7 @@ html, body{
   font-weight: 900;
 }
 
+
 .menu .img{
   width: 10%;
   height: 10%;
@@ -237,6 +343,8 @@ html, body{
 .menu .img img{
   width: 100%;
 }
+
+
 
 .content-wrapper{
   top: 5em;
@@ -263,6 +371,7 @@ html, body{
   margin-top: 4em;
 }
 
+
 .title-content .img-content{
   margin-right: 0.5em;
   height: 3em;
@@ -286,6 +395,9 @@ html, body{
   justify-content: center; 
 }
 
+
+
+
 .content .link-item{
   text-decoration: none;
   text-transform: uppercase;
@@ -296,6 +408,7 @@ html, body{
   text-align: center;
   letter-spacing: 3px;
 }
+
 
 .content .materia{
   width: 10em;
@@ -356,9 +469,142 @@ html, body{
   transition: all .3s ease-in-out;
 }
 
+
 .content .materia .name-materia{
   margin: 16px;
 }
+
+
+
+.content form.nova-turma{
+  position: relative;
+  width: 10em;
+  margin: 0 auto;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em;
+  border-radius: .5em;
+  background: rgba(236, 236, 236, .5);
+}
+
+
+.content form.nova-turma .form-control{
+  width: 100%;
+  padding: 0.8em .5em;
+  margin: .5em;
+  border-radius: .3em;
+  border: none;
+}
+
+
+.content button.btn-formAluno{
+  width: 80%;
+  background: #35672f;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.content form .mensagem{
+  position: absolute;
+  font-weight: 700;
+  font-size: 12px;
+  padding: .5em;
+  top: 75%;
+}
+
+.error{
+  color: red;
+}
+
+.sucesso{
+  color: green;
+}
+
+.content .content-alunos{
+  width: 100%;
+}
+.content .content-alunos table{
+  width: 100%;
+  font-size: 15px;
+}
+
+.content .content-alunos table td{
+  padding: 3px;
+}
+.content .content-alunos table .title{
+    text-align: center;
+    font-weight: bold;
+}
+
+#novo-aluno, #editar-aluno{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#novo-aluno{
+  display: none;
+}
+
+
+
+#novo-aluno form, #editar-aluno form{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#novo-aluno .form-control, #editar-aluno .form-control{
+  width: 100%;
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: .3em;
+}
+
+#novo-aluno .btn-formAluno{
+  width: 80%;
+  background: #35672f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.vazio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content .content-alunos .btn-aluno{
+  background: green;
+  border: none;
+  padding: 1em 3em;
+  color: white;
+  margin-bottom: 1em;
+  cursor: pointer;
+  margin-top: 8em;
+  border-radius: .3em
+}
+
+.bg-green{
+  background: green !important;
+  color: #fff;
+}
+
 
 footer{
   position: absolute;
@@ -375,8 +621,10 @@ footer{
   
 }
 
+
 footer .logo-escola{
   width: 6em;
+
   margin: .5em;
 }
 
@@ -405,4 +653,263 @@ footer #topo{
   cursor: pointer;
   margin-bottom: 2em;
   user-select: none;
+}
+
+
+/*
+
+  #HOME
+
+*/
+
+
+#login-modal{
+  position: fixed;
+  background: rgba(0, 0, 0, .3);
+  height: 100%;
+  width: 100%;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  z-index: 10000;
+  transition: .5s;
+  top: -100%;
+  overflow: auto;
+}
+
+#login-modal .login-content{
+  background: #fff;
+  border-radius: .4em;
+  width: 25em;
+  overflow: hidden;
+}
+
+
+.login-content .header-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(53, 103, 47, 1);*/
+}
+.login-content .title-header{
+  padding: .8em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.login-content .header-login .title-header img{
+  width: 1.2em;
+  margin: 0em .5em .2em;
+}
+
+
+.login-content .escolha{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.escolha button{
+  width: 50%;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.escolha button.btn-active{
+  background: #ff8518;
+  color: #fff;
+}
+
+
+#login-modal .content-form{
+  position: relative;
+  width: auto;
+  display: flex;
+  float: left;
+  align-items: center;
+}
+
+.login-form .form-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25em;
+  padding-bottom: 1em;
+}
+
+.login-form .form-login a{
+  margin-top: .5em;
+  color: #0452e2;
+  text-decoration: none;
+}
+
+.login-form .form-login a:hover{
+  text-decoration: underline;
+}
+
+.login-content .form-control{
+  margin: 10px;
+  width: 90%;
+  height: 3em;
+  padding: 1em;
+}
+
+.login-content .btn-login{
+  width: 70%;
+  padding: 1em;
+  background: #35672f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 2em;
+}
+
+
+
+.login-content .mensagem_erro{
+  float: left;
+  width: 100%;
+  padding: .5em;
+  text-align:center;
+  background: #f40;
+  color: #fff;
+}
+
+.login-content .footer-login{
+  top: 100%;
+  float: left;
+  width: 100%;
+  margin-top: 1em;
+  background: rgba(53, 103, 47, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8em;
+}
+
+.login-content .footer-login img{
+  width: 66%;
+}
+
+
+
+
+.content-home{
+  top: 5em;
+  position: absolute;
+  min-height: calc(100% - 5em);
+  width: 100%;
+  right: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10em;
+}
+
+
+.header .header-left .btn-acessar{
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1em 1em;
+  color: #fff;
+  border-radius: 1em;
+  font-weight: bold;
+  font-size: 11px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  cursor: pointer;
+
+}
+
+.btn-acessar img{
+  width: 1.7em;
+  transform: rotateZ(60deg); 
+}
+
+.box{
+  width: 60em;
+  height: 60em;
+  background: #000;
+}
+
+
+
+.content-home .slider-bar{
+  min-height: 16em;
+  width: 100%;
+  background: #ff0;
+}
+
+
+.content-home .content{
+  min-height: 20em;
+  width: 90%;
+  margin: 1em;
+  background: #000;
+  color: #fff;
+  z-index: 100;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+  #content-side .left-side{
+    display: none;
+  }
+
+  .content-wrapper{
+    min-height: 100%;
+    width: 100% !important; 
+  }
+
+
+
+
+  .content-wrapper .content{
+    height: 100%;
+    width: 100%;
+    padding: 0em;
+  }
+
+  footer .txt{
+    font-size: 10px;
+  }
+
+}
+
+
+@media screen and (max-width: 480px){
+  .content-wrapper .content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dados-perfil{
+    display: none;
+  }
+
+
+  .header .logo{
+    width: 13em;
+  }
+
+
 }
