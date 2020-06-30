@@ -193,7 +193,7 @@
                         Todos os direitos reservados | Rua José Jácome de Carvalho, S/N, Bela Vista, Mauriti-CE - CEP  063210-000
                     </div>
                     <div class="">
-                        Copyright (c) 2020 EEEP Padre João Bosco Lima. <b>Desenvolvido por Onofre Araújo.</b>
+                        Copyright (c) 2020 EEEP Padre João Bosco Lima. <b>Desenvolvido com Amor.</b>
                     </div>
                 </div>
             </footer>  
